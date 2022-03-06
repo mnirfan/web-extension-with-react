@@ -5,14 +5,20 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "transpile": "rimraf dist && tsc -b && copyfiles -u 1 ./src/**/*.html ./dist && copyfiles -u 1 ./src/**/*.png ./dist && copyfiles -u 1 ./src/manifest.json ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2",
     "ts-loader": "^9.2.7",
     "typescript": "^4.6.2",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.179"
   }
 }

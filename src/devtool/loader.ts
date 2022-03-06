@@ -1,5 +1,7 @@
-function cetak() {
-  console.log('world');
-}
+import { browser } from '../globals.js';
 
-cetak();
+browser.devtools.panels.create(
+    'Awesome',
+    '/devtool/assets/pepe.png',
+    '/devtool/panel.html'
+);

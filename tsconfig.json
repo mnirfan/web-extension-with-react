@@ -2,10 +2,17 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
+    "module": "ES2015",
+    "target": "ES2017",
     "jsx": "react",
     "allowJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "declaration": false,
+    "declarationMap": false,
+    "lib": [
+      "ES2015",
+      "ES2017",
+      "DOM"
+    ]
   }
 }

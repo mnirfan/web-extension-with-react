@@ -1,0 +1,19 @@
+{
+  "name": "Awesome Extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "No Description Needed for Awesome Extension",
+  "icons": {
+    "128": "/devtool/assets/pepe.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "webNavigation",
+    "storage",
+    "identity"
+  ],
+  "devtools_page": "devtool/devtool.html",
+  "chrome_url_overrides": {
+    "newtab": "/newtab/index.html"
+  }
+}
