@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "transpile": "rimraf dist && tsc -b && copyfiles -u 1 ./src/**/*.html ./dist && copyfiles -u 1 ./src/**/*.png ./dist && copyfiles -u 1 ./src/manifest.json ./dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf dist && webpack"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.13",
+    "copy-webpack-plugin": "^10.2.4",
     "copyfiles": "^2.4.1",
     "rimraf": "^3.0.2",
     "ts-loader": "^9.2.7",
@@ -19,6 +20,8 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "@types/chrome": "^0.0.179"
+    "@types/chrome": "^0.0.179",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

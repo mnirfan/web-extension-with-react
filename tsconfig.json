@@ -13,6 +13,7 @@
       "ES2015",
       "ES2017",
       "DOM"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true
   }
 }

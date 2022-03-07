@@ -1,4 +1,4 @@
-import { browser } from '../globals.js';
+import { browser } from '../globals';
 
 browser.devtools.panels.create(
     'Awesome',
