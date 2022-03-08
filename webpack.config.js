@@ -3,7 +3,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   mode: "production",
   entry: {
-    panel: { import: './src/devtool/panel.ts', filename: 'devtool/[name].js' },
+    panel: { import: './src/devtool/panel.tsx', filename: 'devtool/[name].js' },
     devtool: { import: './src/devtool/devtool.ts', filename: 'devtool/[name].js' },
   },
   module: {
