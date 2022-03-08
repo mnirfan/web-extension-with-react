@@ -1,3 +1,4 @@
+const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
@@ -25,7 +26,12 @@ module.exports = {
       }
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx", ".ts", ".tsx"] },
+  resolve: {
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
   output: {
     publicPath: "/dist/",
   },

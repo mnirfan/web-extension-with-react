@@ -14,6 +14,9 @@
       "ES2017",
       "DOM"
     ],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": ["./src/*"],
+    }
   }
 }
