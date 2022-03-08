@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         test: /\.(js|jsx)$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules)/,
         loader: "babel-loader",
         options: { presets: ["@babel/env"] }
       },
@@ -43,7 +43,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: 'src/**/*.(html|json|png)',
+          from: 'src/**/*.(html|json|png|jpg|jpeg|svg)',
           to: ({ context, absoluteFilename }) => {
             return absoluteFilename.replace(context, '').replace('/src/', '');
           }
