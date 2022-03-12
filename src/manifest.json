@@ -4,7 +4,7 @@
   "manifest_version": 2,
   "description": "No Description Needed for Awesome Extension",
   "icons": {
-    "128": "/devtool/assets/pepe.png"
+    "128": "/assets/cool-doge.png"
   },
   "permissions": [
     "<all_urls>",

@@ -2,6 +2,6 @@ import { browser } from '@/globals';
 
 browser.devtools.panels.create(
     'Awesome',
-    '/devtool/assets/pepe.png',
+    '/assets/cool-doge.png',
     '/devtool/panel.html'
 );
