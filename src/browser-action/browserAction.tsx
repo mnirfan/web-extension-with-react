@@ -3,4 +3,4 @@ import ReactDOM from "react-dom";
 
 import Container from './components/Container';
 
-ReactDOM.render(<Container />, document.getElementById("newtab-root"));
+ReactDOM.render(<Container />, document.getElementById("browser-action-root"));

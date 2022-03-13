@@ -4,16 +4,18 @@
   "manifest_version": 2,
   "description": "No Description Needed for Awesome Extension",
   "icons": {
-    "128": "/assets/cool-doge.png"
+    "128": "assets/cool-doge.png"
   },
-  "permissions": [
-    "<all_urls>",
-    "webNavigation",
-    "storage",
-    "identity"
-  ],
   "devtools_page": "devtool/devtool.html",
   "chrome_url_overrides": {
-    "newtab": "/newtab/index.html"
+    "newtab": "newtab/index.html"
+  },
+  "background": {
+    "scripts": ["background-script.js"]
+  },
+  "browser_action": {
+    "default_icon": "assets/cool-doge.png",
+    "default_title": "Go Awesome!",
+    "default_popup": "browser-action/index.html"
   }
 }

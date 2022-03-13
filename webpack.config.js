@@ -8,6 +8,8 @@ module.exports = {
     panel: { import: './src/devtool/panel.tsx', filename: 'devtool/[name].js' },
     devtool: { import: './src/devtool/devtool.ts', filename: 'devtool/[name].js' },
     newtab: { import: './src/newtab/newtab.tsx', filename: 'newtab/[name].js' },
+    backgroundScript: { import: './src/backgroundScript.ts', filename: 'background-script.js' },
+    browserAction: { import: './src/browser-action/browserAction.tsx', filename: 'browser-action/browser-action.js' }
   },
   module: {
     rules: [
